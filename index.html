@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Hello World!</title>
+  <title>Github Interface</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 </head>
@@ -11,9 +11,8 @@
 <body>
   <section class="section">
     <div class="container">
-      <h1 class="title">Github Interface</h1>
       <div class="columns">
-        <div class="column is-10">
+        <div class="column">
           <p class="control has-icons-left has-icons-right">
           <input id="usernameInput" class="input is-medium" type="text" placeholder="Github Username" onkeypress="return runScript(event)">
             <span class="icon is-small is-left">
@@ -21,12 +20,13 @@
             </span>
           </p>
         </div>
-        <div class="column">
-          <button class="button is-info is-fullwidth is-medium">Search</button>
-        </div>
       </div>
     </div>
-    <section class="section" id="repos">
+    <section class="section">
+      <div class="columns">
+        <div id="owner" style="padding:20px 100px" class="column is-12"></div>
+      </div>
+      <div id="repos"></div>
     </section>
     </div>
   </section>
