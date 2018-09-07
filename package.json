@@ -1,0 +1,22 @@
+{
+  "name": "pm-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlavienMedina/pm-github.git"
+  },
+  "author": "Flavien Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlavienMedina/pm-github/issues"
+  },
+  "homepage": "https://github.com/FlavienMedina/pm-github#readme",
+  "devDependencies": {
+    "electron": "^2.0.8"
+  }
+}
