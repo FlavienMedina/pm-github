@@ -26,6 +26,8 @@
     "electron": "^2.0.8"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
     "electron-reload": "^1.2.5"
   }
 }

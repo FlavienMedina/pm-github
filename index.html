@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>Hello World!</title>
-    </head>
-    <body>
-      <h1>Hello World!</h1>
-      Nous utilisons Node <script>document.write(process.versions.node)</script>,
-      Chrome <script>document.write(process.versions.chrome)</script>,
-      et Electron <script>document.write(process.versions.electron)</script>.
-    </body>
-  </html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Github Interface</h1>
+      <div class="columns">
+        <div class="column is-10">
+          <p class="control has-icons-left has-icons-right">
+          <input id="usernameInput" class="input is-medium" type="text" placeholder="Github Username" onkeypress="return runScript(event)">
+            <span class="icon is-small is-left">
+              <i class="fas fa-search"></i>
+            </span>
+          </p>
+        </div>
+        <div class="column">
+          <button class="button is-info is-fullwidth is-medium">Search</button>
+        </div>
+      </div>
+    </div>
+    <section class="section" id="repos">
+    </section>
+    </div>
+  </section>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>

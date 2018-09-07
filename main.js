@@ -1,15 +1,18 @@
-import {app, BrowserWindow} from 'electron';
+import {app, BrowserWindow, ipcMain, net} from 'electron';
   // Gardez une reference globale de l'objet window, si vous ne le faites pas, la fenetre sera
   // fermee automatiquement quand l'objet JavaScript sera garbage collected.
   let win
-  const test = 'test';
-  console.log("pomme");
+
   function createWindow () {
     // Créer le browser window.
     win = new BrowserWindow({width: 800, height: 600})
 
     // et charge le index.html de l'application.
     win.loadFile('index.html')
+
+    ipcMain.on('async', (event, arg) => {
+      console.log(arg);
+    });
 
     // Ouvre les DevTools.
     win.webContents.openDevTools()
