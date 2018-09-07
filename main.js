@@ -15,7 +15,7 @@ import {app, BrowserWindow, ipcMain, net} from 'electron';
     });
 
     // Ouvre les DevTools.
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 
     // Émit lorsque la fenêtre est fermée.
     win.on('closed', () => {
